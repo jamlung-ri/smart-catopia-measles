@@ -23,7 +23,7 @@
             "code": "inactive",
             "uri": "http://hl7.org/fhir/concept-properties",
             "description": "True if the concept is not considered active.",
-            "type": "coding"
+            "type": "Coding"
         }
     ],
     "meta": {
