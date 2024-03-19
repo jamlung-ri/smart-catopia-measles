@@ -2,5 +2,5 @@ Profile: CatMeaslesImmunization
 Parent: SGImmunization
 
 * extension[administeredProduct]
-  * valueCodeableConcept from VSMeaslesVaccineProducts (required)
-  * valueReference only Reference(VaccineProducts)
+  * valueCodeableConcept from VSCatMeaslesVaccineProducts (required)
+  * valueReference only Reference(CatMeaslesVaccineProduct)
