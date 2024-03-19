@@ -14,7 +14,7 @@ on:
 
 jobs:
   call-update-readme:
-    uses: WorldHealthOrganization/smart-base/.github/workflows/update_readme.yml@main
+    uses: jamlung-ri/smart-catopia-measles/.github/workflows/update_readme.yml@main
     with:
       repositoryOwner: ${{ github.repository_owner }}
       repositoryName: ${{ github.event.repository.name }}
