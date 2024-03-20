@@ -9,7 +9,7 @@
 
 # WHO SMART GUIDELINES - CATOPIA Measles
 
-CI-Build: https://digitalsqr.github.io/smart-catopia-measles/
+CI-Build: [https://digitalsqr.github.io/smart-catopia-measles/](https://jamlung-ri.github.io/smart-catopia-measles/index.html)
 
 This Implementation Guide contains the Catopia adaptation of the MEASLES vaccination SMART Guidelines.
 
