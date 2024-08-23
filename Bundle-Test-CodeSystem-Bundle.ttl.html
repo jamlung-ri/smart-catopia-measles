@@ -1,0 +1,611 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Example WHO Measles Digital Adaptation Kit Dictionary (Bundle) - TTL Representation - SMART Empty IG v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+    <link href="assets/css/fa-all.css" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/who.css" rel="stylesheet"/>
+    <link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"5.1.4"}
+    h3,h4,h5,h6{--heading-prefix:"5.1.4"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+
+      <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+        <div id="stripe"> </div>
+        <div class="container">  <!-- container -->
+          <!-- HEADER CONTENT -->
+  
+          <nav class="navbar navbar-inverse">
+            <!--status-bar-->
+            <div class="container">
+              <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+                <span class="icon-bar"> </span>
+                <span class="icon-bar"> </span>
+                <span class="icon-bar"> </span>
+              </button>
+              <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4B/index.html">FHIR</a>
+              <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Home
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="index.html">Summary</a>
+      </li>
+      <li>
+        <a href="changes.html">Changes</a>
+      </li>
+      <li>
+        <a href="dependencies.html">Dependencies</a>
+      </li>
+      <li>
+        <a href="references.html">References</a>
+      </li>
+      <li>
+        <a href="adapting.html">Adapting Guidelines for Country use</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Business Requirements
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="concepts.html">Concepts</a>
+      </li>
+      <li>
+        <a href="personas.html">Generic Personas</a>
+      </li>
+      <li>
+        <a href="scenarios.html">User Scenarios</a>
+      </li>
+      <li>
+        <a href="business-processes.html">Business Processes</a>
+      </li>
+      <li>
+        <a href="dictionary.html">Data Dictionary</a>
+      </li>
+      <li>
+        <a href="decision-logic.html">Decision-support Logic</a>
+      </li>
+      <li>
+        <a href="indicators.html">Indicator and Performance Metrics</a>
+      </li>
+      <li>
+        <a href="functional-requirements.html">Functional Requirements</a>
+      </li>
+      <li>
+        <a href="non-functional-requirements.html">Non-functional Requirements</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Data Models and Exchange
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="system-actors.html">System Actors</a>
+      </li>
+      <li>
+        <a href="sequence-diagrams.html">Sequence Diagrams</a>
+      </li>
+      <li>
+        <a href="transactions.html">Transactions</a>
+      </li>
+      <li>
+        <a href="indicators-measures.html">Indicators and Measures</a>
+      </li>
+      <li>
+        <a href="codings.html">Codings</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Deployment
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="security-privacy.html">Security and Privacy Considerations</a>
+      </li>
+      <li>
+        <a href="testing.html">Testing</a>
+      </li>
+      <li>
+        <a href="test-data.html">Test Data</a>
+      </li>
+      <li>
+        <a href="reference-implementations.html">Reference Implementations</a>
+      </li>
+      <li>
+        <a href="trust_domain.html">Trust Domains</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Indices
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html">Artifact Index</a>
+      </li>
+      <li>
+        <a href="maps.html">Mappings</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+              </div>  <!-- /.nav-collapse -->
+
+              <div class="sf_colsIn col-md-8  navbar-right-container" data-sf-element="LanguageSelectorSearch" data-placeholder-label="Language Selector and Search" style="display: flex; justify-content: flex-end; align-items: center;">
+                <!-- This div will be pushed to the right -->
+                <div class="language-selector" style="margin-left: auto; background-color: #00477d; color: white;">
+                  <i class="fa fa-language fa-lg"></i>
+                  <label for="language-selector"> </label>
+                  <select onChange="openLink(value)" id="language-selector" name="language-selector">
+                    <option disabled selected>Select language</option>
+                    <option value="en" class="selected">English</option>
+                  </select>
+                  <i class="fas fa-angle-down"></i>
+                </div>
+                <!-- Search Content -->
+              </div>
+            </div>  <!-- /.container -->
+          </nav>  <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+        </div>  <!-- /container -->
+      </div>  <!-- /segment-navbar -->
+      
+
+      <div class="container" style=" justify-content: space-between; align-items: left;">
+
+        <!-- Placeholder for child template header declarations -->
+<div id="project-nav">
+    <a id="who-logo" no-external="true" href="index.html">
+        
+    </a>
+</div>
+
+ <div id="family-nav">
+  <a id="fhir-logo" no-external="true" href="http://hl7.org/fhir">  </a>
+</div> 
+
+
+        <div id="ig-status" class="ig-status-draft">
+          <p><span style="font-size:12pt;font-weight:bold">SMART Empty IG</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='indices.html'><b>Indices</b></a></li><li><a href='artifacts.html'><b>Artifact Index</b></a></li><li><b>Example WHO Measles Digital Adaptation Kit Dictionary (Bundle)</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 9" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">SMART Empty IG, published by WHO. This guide is not an authorized publication; it is the continuous build for version 0.1.0 built by the FHIR (HL7® FHIR® Standard) CI Build. This version is based on the current content of <a href="https://github.com/jamlung-ri/smart-catopia-measles">https://github.com/jamlung-ri/smart-catopia-measles</a> and changes regularly. See the <a href="http://worldhealthorganization.github.io/smart/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="Bundle-Test-CodeSystem-Bundle.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="Bundle-Test-CodeSystem-Bundle.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Bundle-Test-CodeSystem-Bundle.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Example WHO Measles Digital Adaptation Kit Dictionary (Bundle) - TTL Representation</h2>
+
+
+<p><a href="Bundle-Test-CodeSystem-Bundle.ttl" no-download="true">Raw ttl</a> | <a href="Bundle-Test-CodeSystem-Bundle.ttl" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="rdf" style="white-space: pre; overflow: hidden">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:Bundle ;
+  <a href="http://hl7.org/fhir/R4B/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
+  <a href="http://hl7.org/fhir/R4B/bundle.html#Bundle.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#id">fhir:v</a> &quot;Test-CodeSystem-Bundle&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4B/bundle.html#Bundle.meta">fhir:meta</a> [
+<a href="http://hl7.org/fhir/R4B/resource.html#Meta#Meta.lastUpdated">fhir:lastUpdated</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#instant">fhir:v</a> &quot;2024-08-21T03:40:25.931164Z&quot;^^xsd:dateTime ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4B/bundle.html#Bundle.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;searchset&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4B/bundle.html#Bundle.total">fhir:total</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#unsignedInt">fhir:v</a> &quot;1&quot;^^xsd:nonNegativeInteger] ; # 
+  <a href="http://hl7.org/fhir/R4B/bundle.html#Bundle.link">fhir:link</a> ( [
+<a href="http://hl7.org/fhir/R4B/bundle.html#Bundle.link.relation">fhir:relation</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;self&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/bundle.html#Bundle.link.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:v</a> &quot;https://fhir.staging.openconceptlab.org/orgs/WHO-SG-Example/CodeSystem/?purpose=Example&amp;page=1&quot;^^xsd:anyURI ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4B/bundle.html#Bundle.entry">fhir:entry</a> ( [
+    ( <a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem">fhir:resource</a> [
+<a href="http://hl7.org/fhir/R4B/codesystem.html">a</a> fhir:CodeSystem ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#id">fhir:v</a> &quot;smart-example-immz&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.meta">fhir:meta</a> [
+<a href="http://hl7.org/fhir/R4B/resource.html#Meta#Meta.lastUpdated">fhir:lastUpdated</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#instant">fhir:v</a> &quot;2024-08-22T19:40:01.594557Z&quot;^^xsd:dateTime ]       ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R4B/narrative.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot; xml:lang=\&quot;en\&quot; lang=\&quot;en\&quot;&gt;&lt;a name=\&quot;CodeSystem_smart-example-immz\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: CodeSystem smart-example-immz&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;smart-example-immz\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcsmart-example-immz\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;smart-example-immz-en-US\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Last updated: 2024-08-22 19:40:01+0000; Language: en&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;: &lt;a href=\&quot;Bundle-Test-CodeSystem-Bundle.html\&quot;&gt;Example WHO Measles Digital Adaptation Kit Dictionary&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: Accession ID//orgs/WHO-SG-Example/CodeSystem/smart-example-immz/&lt;/p&gt;&lt;p&gt;&lt;b&gt;version&lt;/b&gt;: 0.1.0&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: WHO Measles DAK Dictionary Example&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: Example WHO Measles Digital Adaptation Kit Dictionary&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Draft&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: &lt;/p&gt;&lt;div&gt;&lt;p&gt;First initial version of Example DAK&lt;/p&gt;\n&lt;/div&gt;&lt;p&gt;&lt;b&gt;purpose&lt;/b&gt;: &lt;/p&gt;&lt;div&gt;&lt;p&gt;Example&lt;/p&gt;\n&lt;/div&gt;&lt;p&gt;&lt;b&gt;content&lt;/b&gt;: Complete&lt;/p&gt;&lt;p&gt;&lt;b&gt;count&lt;/b&gt;: 13&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;property&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: conceptclass&lt;/p&gt;&lt;p&gt;&lt;b&gt;uri&lt;/b&gt;: &lt;a href=\&quot;https://api.staging.openconceptlab.org/orgs/OCL/sources/Classes/concepts\&quot;&gt;https://api.staging.openconceptlab.org/orgs/OCL/sources/Classes/concepts&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Standard list of concept classes.&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: string&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;property&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: datatype&lt;/p&gt;&lt;p&gt;&lt;b&gt;uri&lt;/b&gt;: &lt;a href=\&quot;https://api.staging.openconceptlab.org/orgs/OCL/sources/Datatypes/concepts\&quot;&gt;https://api.staging.openconceptlab.org/orgs/OCL/sources/Datatypes/concepts&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Standard list of concept datatypes.&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: string&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;property&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: inactive&lt;/p&gt;&lt;p&gt;&lt;b&gt;uri&lt;/b&gt;: &lt;a href=\&quot;http://hl7.org/fhir/R4B/codesystem-concept-properties.html\&quot;&gt;http://hl7.org/fhir/concept-properties&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: True if the concept is not considered active.&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Coding (external reference)&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;concept&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: 10000387&lt;/p&gt;&lt;p&gt;&lt;b&gt;display&lt;/b&gt;: No ANC danger signs&lt;/p&gt;&lt;p&gt;&lt;b&gt;definition&lt;/b&gt;: No danger signs were observed by the health worker when checking for danger signs&lt;/p&gt;&lt;h3&gt;Designations&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Language&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Use&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;English&lt;/td&gt;&lt;td&gt;[not stated] Fully Specified: Fully Specified&lt;/td&gt;&lt;td&gt;No ANC danger signs&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;property&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: conceptclass&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Input Option&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;property&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: datatype&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: List value&lt;/p&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;concept&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: 10000389&lt;/p&gt;&lt;p&gt;&lt;b&gt;display&lt;/b&gt;: Danger Signs&lt;/p&gt;&lt;p&gt;&lt;b&gt;definition&lt;/b&gt;: Indicates observations health worker made when checking for danger signs&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;designation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;language&lt;/b&gt;: English&lt;/p&gt;&lt;p&gt;&lt;b&gt;use&lt;/b&gt;: [not stated] Fully Specified: Fully Specified&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Danger signs - edited&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;designation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;language&lt;/b&gt;: English&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Danger Signs&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;property&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: conceptclass&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Input Option&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;property&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: datatype&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: List - select all that apply&lt;/p&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;concept&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: 1234&lt;/p&gt;&lt;p&gt;&lt;b&gt;display&lt;/b&gt;: New Input Option&lt;/p&gt;&lt;h3&gt;Designations&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Language&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Use&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;English&lt;/td&gt;&lt;td&gt;[not stated] Fully-Specified: Fully-Specified&lt;/td&gt;&lt;td&gt;New Input Option&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;property&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: conceptclass&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Finding&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;property&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: datatype&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: None&lt;/p&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;concept&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: 10000495&lt;/p&gt;&lt;p&gt;&lt;b&gt;display&lt;/b&gt;: Central cyanosis&lt;/p&gt;&lt;p&gt;&lt;b&gt;definition&lt;/b&gt;: Woman has a bluish discolouration of the skin&lt;/p&gt;&lt;h3&gt;Designations&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Language&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Use&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;English&lt;/td&gt;&lt;td&gt;[not stated] Fully Specified: Fully Specified&lt;/td&gt;&lt;td&gt;Central cyanosis&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;property&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: conceptclass&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Input Option&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;property&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: datatype&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: List value&lt;/p&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;concept&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: 10000497&lt;/p&gt;&lt;p&gt;&lt;b&gt;display&lt;/b&gt;: ANC quick check danger signs observations&lt;/p&gt;&lt;p&gt;&lt;b&gt;definition&lt;/b&gt;: Health worker assesses woman to see whether there are any danger signs that warrant in-facility management or referral, or if possible, to proceed with the routine ANC contact&lt;/p&gt;&lt;h3&gt;Designations&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Language&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Use&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;English&lt;/td&gt;&lt;td&gt;[not stated] Fully Specified: Fully Specified&lt;/td&gt;&lt;td&gt;ANC quick check danger signs observations&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;property&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: conceptclass&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Data Element&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;property&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: datatype&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: List - select all that apply&lt;/p&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;concept&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: 10000499&lt;/p&gt;&lt;p&gt;&lt;b&gt;display&lt;/b&gt;: Bleeding vaginally&lt;/p&gt;&lt;p&gt;&lt;b&gt;definition&lt;/b&gt;: Woman is bleeding vaginally&lt;/p&gt;&lt;h3&gt;Designations&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Language&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Use&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;English&lt;/td&gt;&lt;td&gt;[not stated] Fully Specified: Fully Specified&lt;/td&gt;&lt;td&gt;Bleeding vaginally&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;property&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: conceptclass&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Input Option&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;property&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: datatype&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: List value&lt;/p&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;concept&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: 10000503&lt;/p&gt;&lt;p&gt;&lt;b&gt;display&lt;/b&gt;: Convulsing&lt;/p&gt;&lt;p&gt;&lt;b&gt;definition&lt;/b&gt;: Woman is convulsing&lt;/p&gt;&lt;h3&gt;Designations&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Language&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Use&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;English&lt;/td&gt;&lt;td&gt;[not stated] Fully Specified: Fully Specified&lt;/td&gt;&lt;td&gt;Convulsing&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;property&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: conceptclass&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Input Option&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;property&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: datatype&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: List value&lt;/p&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;concept&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: 10000505&lt;/p&gt;&lt;p&gt;&lt;b&gt;display&lt;/b&gt;: Fever&lt;/p&gt;&lt;p&gt;&lt;b&gt;definition&lt;/b&gt;: Woman has a fever (body temperature greater than or equal to 37°C)&lt;/p&gt;&lt;h3&gt;Designations&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Language&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Use&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;English&lt;/td&gt;&lt;td&gt;[not stated] Fully Specified: Fully Specified&lt;/td&gt;&lt;td&gt;Fever&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;property&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: conceptclass&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Input Option&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;property&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: datatype&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: List value&lt;/p&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;concept&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: 10000507&lt;/p&gt;&lt;p&gt;&lt;b&gt;display&lt;/b&gt;: Imminent delivery&lt;/p&gt;&lt;p&gt;&lt;b&gt;definition&lt;/b&gt;: Woman is about to give birth&lt;/p&gt;&lt;h3&gt;Designations&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Language&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Use&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;English&lt;/td&gt;&lt;td&gt;[not stated] Fully Specified: Fully Specified&lt;/td&gt;&lt;td&gt;Imminent delivery&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;property&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: conceptclass&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Input Option&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;property&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: datatype&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: List value&lt;/p&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;concept&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: 10000509&lt;/p&gt;&lt;p&gt;&lt;b&gt;display&lt;/b&gt;: Labour&lt;/p&gt;&lt;p&gt;&lt;b&gt;definition&lt;/b&gt;: Woman is in labour&lt;/p&gt;&lt;h3&gt;Designations&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Language&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Use&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;English&lt;/td&gt;&lt;td&gt;[not stated] Fully Specified: Fully Specified&lt;/td&gt;&lt;td&gt;Labour&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;property&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: conceptclass&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Input Option&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;property&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: datatype&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: List value&lt;/p&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;concept&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: 10000511&lt;/p&gt;&lt;p&gt;&lt;b&gt;display&lt;/b&gt;: ANC danger signs&lt;/p&gt;&lt;p&gt;&lt;b&gt;definition&lt;/b&gt;: Indicates observations health worker made when checking for danger signs&lt;/p&gt;&lt;h3&gt;Designations&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Language&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Use&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;English&lt;/td&gt;&lt;td&gt;[not stated] Fully Specified: Fully Specified&lt;/td&gt;&lt;td&gt;ANC danger signs&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;property&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: conceptclass&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Input Option&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;property&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: datatype&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: List - select all that apply&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;property&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: inactive&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: true&lt;/p&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;concept&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: ANC.B5.DE48&lt;/p&gt;&lt;p&gt;&lt;b&gt;display&lt;/b&gt;: ANC quick check danger signs observations&lt;/p&gt;&lt;p&gt;&lt;b&gt;definition&lt;/b&gt;: Health worker assesses woman to see whether there are any danger signs that warrant in-facility management or referral, or if possible, to proceed with the routine ANC contact&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;designation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;language&lt;/b&gt;: English&lt;/p&gt;&lt;p&gt;&lt;b&gt;use&lt;/b&gt;: [not stated] Fully-Specified: Fully-Specified&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: ANC quick check danger signs observations&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;designation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;language&lt;/b&gt;: English&lt;/p&gt;&lt;p&gt;&lt;b&gt;use&lt;/b&gt;: [not stated] None: None&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Example Synonym Value&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;property&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: conceptclass&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Question&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;property&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: datatype&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Coded&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;property&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: inactive&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: true&lt;/p&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;concept&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: 10000501&lt;/p&gt;&lt;p&gt;&lt;b&gt;display&lt;/b&gt;: Central cyanosis&lt;/p&gt;&lt;p&gt;&lt;b&gt;definition&lt;/b&gt;: Woman has a bluish discolouration of the skin&lt;/p&gt;&lt;h3&gt;Designations&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Language&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Use&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;English&lt;/td&gt;&lt;td&gt;[not stated] Fully Specified: Fully Specified&lt;/td&gt;&lt;td&gt;Central cyanosis&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;property&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: conceptclass&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Input Option&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;property&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: datatype&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: List value&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;property&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: inactive&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: true&lt;/p&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/div&gt;&quot;       ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:v</a> &quot;http://smart.who.int/immunizations-measles/example-DAK&quot;^^xsd:anyURI ] ;
+      ( <a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.identifier">fhir:identifier</a> [
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Identifier#Identifier.type">fhir:type</a> [
+          ( <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/v2/0203&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;ACSN&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Accession ID&quot; ]           ] ) ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Accession ID&quot; ]         ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Identifier#Identifier.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:v</a> &quot;https://api.staging.openconceptlab.org&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;/orgs/WHO-SG-Example/CodeSystem/smart-example-immz/&quot; ]       ] ) ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;0.1.0&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;WHO Measles DAK Dictionary Example&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Example WHO Measles Digital Adaptation Kit Dictionary&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;draft&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#markdown">fhir:v</a> &quot;First initial version of Example DAK&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.purpose">fhir:purpose</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#markdown">fhir:v</a> &quot;Example&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.content">fhir:content</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;complete&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.count">fhir:count</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#unsignedInt">fhir:v</a> &quot;13&quot;^^xsd:nonNegativeInteger ] ;
+      ( <a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.property">fhir:property</a> [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;conceptclass&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.property.uri">fhir:uri</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:v</a> &quot;https://api.staging.openconceptlab.org/orgs/OCL/sources/Classes/concepts&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.property.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Standard list of concept classes.&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.property.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;string&quot; ]       ] [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;datatype&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.property.uri">fhir:uri</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:v</a> &quot;https://api.staging.openconceptlab.org/orgs/OCL/sources/Datatypes/concepts&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.property.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Standard list of concept datatypes.&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.property.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;string&quot; ]       ] [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;inactive&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.property.uri">fhir:uri</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/concept-properties&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.property.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;True if the concept is not considered active.&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.property.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;Coding&quot; ]       ] ) ;
+      ( <a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept">fhir:concept</a> [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;10000387&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;No ANC danger signs&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;No danger signs were observed by the health worker when checking for danger signs&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.designation.use">fhir:use</a> [
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;Fully Specified&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;No ANC danger signs&quot; ]         ] ) ;
+        ( <a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property">fhir:property</a> [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;conceptclass&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Input Option&quot; ]         ] [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;datatype&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;List value&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;10000389&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Danger Signs&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Indicates observations health worker made when checking for danger signs&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.designation.use">fhir:use</a> [
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;Fully Specified&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Danger signs - edited&quot; ]         ] [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Danger Signs&quot; ]         ] ) ;
+        ( <a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property">fhir:property</a> [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;conceptclass&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Input Option&quot; ]         ] [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;datatype&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;List - select all that apply&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;1234&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;New Input Option&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.designation.use">fhir:use</a> [
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;Fully-Specified&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;New Input Option&quot; ]         ] ) ;
+        ( <a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property">fhir:property</a> [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;conceptclass&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Finding&quot; ]         ] [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;datatype&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;None&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;10000495&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Central cyanosis&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Woman has a bluish discolouration of the skin&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.designation.use">fhir:use</a> [
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;Fully Specified&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Central cyanosis&quot; ]         ] ) ;
+        ( <a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property">fhir:property</a> [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;conceptclass&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Input Option&quot; ]         ] [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;datatype&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;List value&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;10000497&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;ANC quick check danger signs observations&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Health worker assesses woman to see whether there are any danger signs that warrant in-facility management or referral, or if possible, to proceed with the routine ANC contact&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.designation.use">fhir:use</a> [
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;Fully Specified&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;ANC quick check danger signs observations&quot; ]         ] ) ;
+        ( <a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property">fhir:property</a> [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;conceptclass&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Data Element&quot; ]         ] [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;datatype&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;List - select all that apply&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;10000499&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Bleeding vaginally&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Woman is bleeding vaginally&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.designation.use">fhir:use</a> [
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;Fully Specified&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Bleeding vaginally&quot; ]         ] ) ;
+        ( <a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property">fhir:property</a> [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;conceptclass&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Input Option&quot; ]         ] [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;datatype&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;List value&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;10000503&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Convulsing&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Woman is convulsing&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.designation.use">fhir:use</a> [
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;Fully Specified&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Convulsing&quot; ]         ] ) ;
+        ( <a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property">fhir:property</a> [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;conceptclass&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Input Option&quot; ]         ] [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;datatype&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;List value&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;10000505&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Fever&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Woman has a fever (body temperature greater than or equal to 37°C)&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.designation.use">fhir:use</a> [
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;Fully Specified&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Fever&quot; ]         ] ) ;
+        ( <a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property">fhir:property</a> [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;conceptclass&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Input Option&quot; ]         ] [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;datatype&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;List value&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;10000507&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Imminent delivery&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Woman is about to give birth&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.designation.use">fhir:use</a> [
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;Fully Specified&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Imminent delivery&quot; ]         ] ) ;
+        ( <a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property">fhir:property</a> [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;conceptclass&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Input Option&quot; ]         ] [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;datatype&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;List value&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;10000509&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Labour&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Woman is in labour&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.designation.use">fhir:use</a> [
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;Fully Specified&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Labour&quot; ]         ] ) ;
+        ( <a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property">fhir:property</a> [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;conceptclass&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Input Option&quot; ]         ] [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;datatype&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;List value&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;10000511&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;ANC danger signs&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Indicates observations health worker made when checking for danger signs&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.designation.use">fhir:use</a> [
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;Fully Specified&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;ANC danger signs&quot; ]         ] ) ;
+        ( <a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property">fhir:property</a> [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;conceptclass&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Input Option&quot; ]         ] [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;datatype&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;List - select all that apply&quot; ]         ] [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;inactive&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#boolean">fhir:v</a> &quot;true&quot;^^xsd:boolean ]         ] )       ] [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;ANC.B5.DE48&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;ANC quick check danger signs observations&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Health worker assesses woman to see whether there are any danger signs that warrant in-facility management or referral, or if possible, to proceed with the routine ANC contact&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.designation.use">fhir:use</a> [
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;Fully-Specified&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;ANC quick check danger signs observations&quot; ]         ] [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.designation.use">fhir:use</a> [
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;None&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Example Synonym Value&quot; ]         ] ) ;
+        ( <a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property">fhir:property</a> [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;conceptclass&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Question&quot; ]         ] [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;datatype&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Coded&quot; ]         ] [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;inactive&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#boolean">fhir:v</a> &quot;true&quot;^^xsd:boolean ]         ] )       ] [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;10000501&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Central cyanosis&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Woman has a bluish discolouration of the skin&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.designation.use">fhir:use</a> [
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;Fully Specified&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Central cyanosis&quot; ]         ] ) ;
+        ( <a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property">fhir:property</a> [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;conceptclass&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Input Option&quot; ]         ] [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;datatype&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;List value&quot; ]         ] [
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;inactive&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#boolean">fhir:v</a> &quot;true&quot;^^xsd:boolean ]         ] )       ] )     ] )
+  ] ) . # 
+
+</pre>
+
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package who.fhir.smart-measles-catopia#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Fri, Aug 23, 2024 18:53+0000">2024-08-23</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+| <a style="color: #81BEF7" target="_blank" href="http://worldhealthorganization.github.io/smart/history.html">Version History</a> | <a style="color: #81BEF7" rel="license" href="license.html">License</a>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

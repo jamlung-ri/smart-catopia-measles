@@ -1,0 +1,78 @@
+SMART : Validation Results
+=========================================
+
+err = 21, warn = 30, info = 2
+$--
+Generated $--. FHIR version $-- for who.fhir.smart-measles-catopia#$-- (canonical = http://worldhealthorganization.github.io/smart)
+ Build Errors : 7 / 6 / 0
+ /github/workspace/fsh-generated/resources/ImplementationGuide-who.fhir.smart-measles-catopia : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-CatMeaslesImmunization : 1 / 1 / 1
+ /github/workspace/input/resources/CodeSystem-VaccineProducts : 5 / 1 / 1
+ /github/workspace/input/resources/Test-CodeSystem-Bundle : 10 / 19 / 4
+ /github/workspace/input/resources/ValueSet-VSMeaslesVaccineProducts : 3 / 2 / 1
+</table>
+== n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/CatMeaslesImmunization.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/Test-CodeSystem-Bundle.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Immunization.status: The reference http://hl7.org/fhir/ValueSet/immunization-status|4.0.1 could not be resolved
+ERROR: /github/workspace/output/StructureDefinition-CatMeaslesImmunization-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/span/a at Line 409, column 405: The link 'immunization-status|4.0.1.html' for "immunization-status|4.0.1" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-CatMeaslesImmunization-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/span/a at Line 494, column 297: The link 'immunization-status|4.0.1.html' for "immunization-status|4.0.1" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-CatMeaslesImmunization.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 548, column 242: The link 'immunization-status|4.0.1.html' for "immunization-status|4.0.1" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-CatMeaslesImmunization.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 740, column 240: The link 'immunization-status|4.0.1.html' for "immunization-status|4.0.1" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-CatMeaslesImmunization.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1422, column 242: The link 'immunization-status|4.0.1.html' for "immunization-status|4.0.1" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-CatMeaslesImmunization.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1614, column 240: The link 'immunization-status|4.0.1.html' for "immunization-status|4.0.1" cannot be resolved
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/ImplementationGuide-who.fhir.smart-measles-catopia.json ==
+ERROR: ImplementationGuide/who.fhir.smart-measles-catopia: ImplementationGuide.meta.profile[0]: Canonical URLs must be absolute URLs if they are not fragment references (SMARTImplementationGuide)
+WARNING: ImplementationGuide/who.fhir.smart-measles-catopia: ImplementationGuide.meta.profile[0]: Profile reference 'SMARTImplementationGuide' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+== fsh-generated/resources/StructureDefinition-CatMeaslesImmunization.json ==
+ERROR: StructureDefinition/CatMeaslesImmunization: StructureDefinition.snapshot.element[16].binding.valueSet: Canonical URL 'http://hl7.org/fhir/ValueSet/immunization-status|4.0.1' does not resolve
+WARNING: StructureDefinition.where(url = 'http://worldhealthorganization.github.io/smart/StructureDefinition/CatMeaslesImmunization'): The Implementation Guide contains no examples for this profile
+== input/resources/CodeSystem-VaccineProducts.json ==
+ERROR: CodeSystem.where(url = 'http://smart.who.int/immunizations-measles/CodeSystem/VaccineProducts'): Conformance resource /github/workspace/input/resources/CodeSystem-VaccineProducts.json - the canonical URL (http://worldhealthorganization.github.io/smart/CodeSystem/VaccineProducts) does not match the URL (http://smart.who.int/immunizations-measles/CodeSystem/VaccineProducts)
+WARNING: CodeSystem/VaccineProducts: CodeSystem.identifier[0].type.coding[0].system: A definition for CodeSystem 'http://hl7.org/fhir/v2/0203' could not be found, so the code cannot be validated
+ERROR: CodeSystem/VaccineProducts: CodeSystem.identifier[0].type.coding[0].system: URL value 'http://hl7.org/fhir/v2/0203' does not resolve
+ERROR: CodeSystem/VaccineProducts: CodeSystem.property[2]: Unknown CodeSystem Property 'http://hl7.org/fhir/concept-properties'. If you are creating your own property, do not create it in the HL7 namespace
+ERROR: CodeSystem/VaccineProducts: CodeSystem.concept[0].property[2]: The property 'inactive' has the invalid type 'boolean', when it is defined to have the type 'Coding'
+ERROR: /github/workspace/input/resources/CodeSystem-VaccineProducts: URL Mismatch http://worldhealthorganization.github.io/smart/CodeSystem/VaccineProducts vs http://smart.who.int/immunizations-measles/CodeSystem/VaccineProducts
+== input/resources/Test-CodeSystem-Bundle.json ==
+INFORMATION: Bundle/Test-CodeSystem-Bundle: Bundle.entry[0].resource/*CodeSystem/smart-example-immz*/: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: Bundle/Test-CodeSystem-Bundle: Bundle.entry[0].resource/*CodeSystem/smart-example-immz*/: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: Bundle/Test-CodeSystem-Bundle: Bundle.entry[0].resource/*CodeSystem/smart-example-immz*/: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+ERROR: Bundle/Test-CodeSystem-Bundle: Bundle.entry[0].resource/*CodeSystem/smart-example-immz*/.property[2]: Unknown CodeSystem Property 'http://hl7.org/fhir/concept-properties'. If you are creating your own property, do not create it in the HL7 namespace
+ERROR: Bundle/Test-CodeSystem-Bundle: Bundle.entry[0].resource/*CodeSystem/smart-example-immz*/.concept[10].property[2]: The property 'inactive' has the invalid type 'boolean', when it is defined to have the type 'Coding'
+ERROR: Bundle/Test-CodeSystem-Bundle: Bundle.entry[0].resource/*CodeSystem/smart-example-immz*/.concept[11].property[2]: The property 'inactive' has the invalid type 'boolean', when it is defined to have the type 'Coding'
+ERROR: Bundle/Test-CodeSystem-Bundle: Bundle.entry[0].resource/*CodeSystem/smart-example-immz*/.concept[12].property[2]: The property 'inactive' has the invalid type 'boolean', when it is defined to have the type 'Coding'
+WARNING: Bundle/Test-CodeSystem-Bundle: Bundle.entry[0].resource/*CodeSystem/smart-example-immz*/.identifier[0].type.coding[0].system: A definition for CodeSystem 'http://hl7.org/fhir/v2/0203' could not be found, so the code cannot be validated
+ERROR: Bundle/Test-CodeSystem-Bundle: Bundle.entry[0].resource/*CodeSystem/smart-example-immz*/.identifier[0].type.coding[0].system: URL value 'http://hl7.org/fhir/v2/0203' does not resolve
+WARNING: Bundle/Test-CodeSystem-Bundle: Bundle.entry[0].resource/*CodeSystem/smart-example-immz*/.concept[0].designation[0].use: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Bundle/Test-CodeSystem-Bundle: Bundle.entry[0].resource/*CodeSystem/smart-example-immz*/.concept[1].designation[0].use: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Bundle/Test-CodeSystem-Bundle: Bundle.entry[0].resource/*CodeSystem/smart-example-immz*/.concept[2].designation[0].use: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Bundle/Test-CodeSystem-Bundle: Bundle.entry[0].resource/*CodeSystem/smart-example-immz*/.concept[3].designation[0].use: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Bundle/Test-CodeSystem-Bundle: Bundle.entry[0].resource/*CodeSystem/smart-example-immz*/.concept[4].designation[0].use: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Bundle/Test-CodeSystem-Bundle: Bundle.entry[0].resource/*CodeSystem/smart-example-immz*/.concept[5].designation[0].use: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Bundle/Test-CodeSystem-Bundle: Bundle.entry[0].resource/*CodeSystem/smart-example-immz*/.concept[6].designation[0].use: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Bundle/Test-CodeSystem-Bundle: Bundle.entry[0].resource/*CodeSystem/smart-example-immz*/.concept[7].designation[0].use: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Bundle/Test-CodeSystem-Bundle: Bundle.entry[0].resource/*CodeSystem/smart-example-immz*/.concept[8].designation[0].use: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Bundle/Test-CodeSystem-Bundle: Bundle.entry[0].resource/*CodeSystem/smart-example-immz*/.concept[9].designation[0].use: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Bundle/Test-CodeSystem-Bundle: Bundle.entry[0].resource/*CodeSystem/smart-example-immz*/.concept[10].designation[0].use: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Bundle/Test-CodeSystem-Bundle: Bundle.entry[0].resource/*CodeSystem/smart-example-immz*/.concept[11].designation[0].use: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Bundle/Test-CodeSystem-Bundle: Bundle.entry[0].resource/*CodeSystem/smart-example-immz*/.concept[11].designation[1].use: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Bundle/Test-CodeSystem-Bundle: Bundle.entry[0].resource/*CodeSystem/smart-example-immz*/.concept[12].designation[0].use: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: Bundle/Test-CodeSystem-Bundle: Bundle.entry[0]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
+INFORMATION: Bundle/Test-CodeSystem-Bundle: Bundle.entry[0].resource: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: Bundle/Test-CodeSystem-Bundle: Bundle.entry[0].resource: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: Bundle/Test-CodeSystem-Bundle: Bundle.entry[0].resource: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+ERROR: Bundle/Test-CodeSystem-Bundle: Bundle.entry[0].resource.property[2]: Unknown CodeSystem Property 'http://hl7.org/fhir/concept-properties'. If you are creating your own property, do not create it in the HL7 namespace
+ERROR: Bundle/Test-CodeSystem-Bundle: Bundle.entry[0].resource.concept[10].property[2]: The property 'inactive' has the invalid type 'boolean', when it is defined to have the type 'Coding'
+ERROR: Bundle/Test-CodeSystem-Bundle: Bundle.entry[0].resource.concept[11].property[2]: The property 'inactive' has the invalid type 'boolean', when it is defined to have the type 'Coding'
+ERROR: Bundle/Test-CodeSystem-Bundle: Bundle.entry[0].resource.concept[12].property[2]: The property 'inactive' has the invalid type 'boolean', when it is defined to have the type 'Coding'
+== input/resources/ValueSet-VSMeaslesVaccineProducts.json ==
+ERROR: ValueSet.where(url = 'http://smart.who.int/immunizations-measles/ValueSet/VSMeaslesVaccineProducts'): Conformance resource /github/workspace/input/resources/ValueSet-VSMeaslesVaccineProducts.json - the canonical URL (http://worldhealthorganization.github.io/smart/ValueSet/VSMeaslesVaccineProducts) does not match the URL (http://smart.who.int/immunizations-measles/ValueSet/VSMeaslesVaccineProducts)
+WARNING: ValueSet/VSMeaslesVaccineProducts: ValueSet.identifier[0].type.coding[0].system: A definition for CodeSystem 'http://hl7.org/fhir/v2/0203' could not be found, so the code cannot be validated
+ERROR: ValueSet/VSMeaslesVaccineProducts: ValueSet.identifier[0].type.coding[0].system: URL value 'http://hl7.org/fhir/v2/0203' does not resolve
+WARNING: ValueSet/VSMeaslesVaccineProducts: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: /github/workspace/input/resources/ValueSet-VSMeaslesVaccineProducts: URL Mismatch http://worldhealthorganization.github.io/smart/ValueSet/VSMeaslesVaccineProducts vs http://smart.who.int/immunizations-measles/ValueSet/VSMeaslesVaccineProducts

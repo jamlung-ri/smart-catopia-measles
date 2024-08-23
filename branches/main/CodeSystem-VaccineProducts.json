@@ -1,0 +1,113 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "VaccineProducts",
+  "meta" : {
+    "lastUpdated" : "2024-02-23T20:43:22.381603Z"
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p><b>Properties</b></p><p><b>This code system  defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>conceptclass</td><td>https://api.staging.openconceptlab.org/orgs/OCL/sources/Classes/concepts</td><td>string</td><td>Standard list of concept classes.</td></tr><tr><td>datatype</td><td>https://api.staging.openconceptlab.org/orgs/OCL/sources/Datatypes/concepts</td><td>string</td><td>Standard list of concept datatypes.</td></tr><tr><td>inactive</td><td>http://hl7.org/fhir/concept-properties</td><td>Coding</td><td>True if the concept is not considered active.</td></tr></table><p><b>Concepts</b></p><p>This case-sensitive code system <code>http://smart.who.int/immunizations-measles/CodeSystem/VaccineProducts</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>inactive</b></td></tr><tr><td style=\"white-space:nowrap\">7680007030014<a name=\"VaccineProducts-7680007030014\"> </a></td><td>M-M-RvaxPRO</td><td/></tr><tr><td style=\"white-space:nowrap\">20009060%2F2<a name=\"VaccineProducts-20009060.372F2\"> </a></td><td>Serum Institute of India Measles vaccine</td><td/></tr><tr><td style=\"white-space:nowrap\">1<a name=\"VaccineProducts-1\"> </a></td><td>Serum Institute of India Measles vaccine</td><td>true</td></tr></table></div>"
+  },
+  "url" : "http://smart.who.int/immunizations-measles/CodeSystem/VaccineProducts",
+  "identifier" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/v2/0203",
+        "code" : "ACSN",
+        "display" : "Accession ID"
+      }],
+      "text" : "Accession ID"
+    },
+    "system" : "https://api.staging.openconceptlab.org",
+    "value" : "/orgs/WHO-Smart-Guidelines/CodeSystem/VaccineProducts/"
+  }],
+  "version" : "0.1.0",
+  "name" : "VaccineProducts",
+  "title" : "Vaccine Product codes CodeSet",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2024-03-20T15:10:16+00:00",
+  "publisher" : "WHO",
+  "contact" : [{
+    "name" : "WHO",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://who.int"
+    }]
+  }],
+  "description" : "0.1.0",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 2,
+  "property" : [{
+    "code" : "conceptclass",
+    "uri" : "https://api.staging.openconceptlab.org/orgs/OCL/sources/Classes/concepts",
+    "description" : "Standard list of concept classes.",
+    "type" : "string"
+  },
+  {
+    "code" : "datatype",
+    "uri" : "https://api.staging.openconceptlab.org/orgs/OCL/sources/Datatypes/concepts",
+    "description" : "Standard list of concept datatypes.",
+    "type" : "string"
+  },
+  {
+    "code" : "inactive",
+    "uri" : "http://hl7.org/fhir/concept-properties",
+    "description" : "True if the concept is not considered active.",
+    "type" : "Coding"
+  }],
+  "concept" : [{
+    "code" : "7680007030014",
+    "display" : "M-M-RvaxPRO",
+    "designation" : [{
+      "language" : "en",
+      "value" : "M-M-RvaxPRO"
+    }],
+    "property" : [{
+      "code" : "conceptclass",
+      "valueString" : "Drug"
+    },
+    {
+      "code" : "datatype",
+      "valueString" : "None"
+    }]
+  },
+  {
+    "code" : "20009060%2F2",
+    "display" : "Serum Institute of India Measles vaccine",
+    "designation" : [{
+      "language" : "en",
+      "value" : "Serum Institute of India Measles vaccine"
+    }],
+    "property" : [{
+      "code" : "conceptclass",
+      "valueString" : "Drug"
+    },
+    {
+      "code" : "datatype",
+      "valueString" : "None"
+    }]
+  },
+  {
+    "code" : "1",
+    "display" : "Serum Institute of India Measles vaccine",
+    "designation" : [{
+      "language" : "en",
+      "value" : "Serum Institute of India Measles vaccine"
+    }],
+    "property" : [{
+      "code" : "conceptclass",
+      "valueString" : "Drug"
+    },
+    {
+      "code" : "datatype",
+      "valueString" : "None"
+    },
+    {
+      "code" : "inactive",
+      "valueString" : "true"
+    }]
+  }]
+}

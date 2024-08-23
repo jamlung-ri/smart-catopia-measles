@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="c2ad7a57-7c7c-4500-8770-e4cd44478363"/>
+  <meta>
+    <lastUpdated value="2024-08-23T18:53:53.951+00:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="http://smart.who.int/immunizations-measles/ValueSet/VSMeaslesVaccineProducts"/>
+    <resource>
+      <ValueSet>
+        <meta>
+          <lastUpdated value="2024-02-23T20:44:52.861018Z"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
+              <p style="margin-bottom: 0px">Last updated: 2024-02-23 20:44:52+0000</p>
+            </div>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-VaccineProducts.html">codesystem Vaccine Product codes CodeSet v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Inactive</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://smart.who.int/immunizations-measles/CodeSystem/VaccineProducts-1"> </a>  
+                  <a href="CodeSystem-VaccineProducts.html#VaccineProducts-1">1</a>
+                </td>
+                <td>http://smart.who.int/immunizations-measles/CodeSystem/VaccineProducts</td>
+                <td>Serum Institute of India Measles vaccine</td>
+                <td>inactive</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://smart.who.int/immunizations-measles/CodeSystem/VaccineProducts-7680007030014"> </a>  
+                  <a href="CodeSystem-VaccineProducts.html#VaccineProducts-7680007030014">7680007030014</a>
+                </td>
+                <td>http://smart.who.int/immunizations-measles/CodeSystem/VaccineProducts</td>
+                <td>M-M-RvaxPRO</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://smart.who.int/immunizations-measles/CodeSystem/VaccineProducts-20009060|252F2"> </a>  
+                  <a href="CodeSystem-VaccineProducts.html#VaccineProducts-20009060.372F2">20009060%2F2</a>
+                </td>
+                <td>http://smart.who.int/immunizations-measles/CodeSystem/VaccineProducts</td>
+                <td>Serum Institute of India Measles vaccine</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://smart.who.int/immunizations-measles/ValueSet/VSMeaslesVaccineProducts"/>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/v2/0203"/>
+              <code value="ACSN"/>
+              <display value="Accession ID"/>
+            </coding>
+            <text value="Accession ID"/>
+          </type>
+          <system value="https://api.staging.openconceptlab.org"/>
+          <value value="/orgs/WHO-Smart-Guidelines/ValueSet/VSMeaslesVaccineProducts/"/>
+        </identifier>
+        <version value="0.1.0"/>
+        <name value="VSMeaslesVaccineProducts"/>
+        <title value="MeaslesVaccine Products ValueSet - OCL"/>
+        <status value="active"/>
+        <date value="2024-02-23T20:44:52.851603Z"/>
+        <expansion>
+          <identifier value="urn:uuid:2851477e-4cb6-491d-8e0c-307f764f9ce2"/>
+          <timestamp value="2024-08-23T18:54:12+00:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="warning-experimental"/>
+            <valueUri value="http://smart.who.int/immunizations-measles/CodeSystem/VaccineProducts|0.1.0"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://smart.who.int/immunizations-measles/CodeSystem/VaccineProducts|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://smart.who.int/immunizations-measles/CodeSystem/VaccineProducts"/>
+            <inactive value="true"/>
+            <code value="1"/>
+            <display value="Serum Institute of India Measles vaccine"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/immunizations-measles/CodeSystem/VaccineProducts"/>
+            <code value="7680007030014"/>
+            <display value="M-M-RvaxPRO"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/immunizations-measles/CodeSystem/VaccineProducts"/>
+            <code value="20009060%2F2"/>
+            <display value="Serum Institute of India Measles vaccine"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

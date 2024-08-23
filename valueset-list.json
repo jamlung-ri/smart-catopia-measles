@@ -1,0 +1,15 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://smart.who.int/immunizations-measles/ValueSet/VSMeaslesVaccineProducts",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "VSMeaslesVaccineProducts",
+      "title" : "MeaslesVaccine Products ValueSet - OCL",
+      "description" : "0.1.0",
+      "systems" : [
+        "http://smart.who.int/immunizations-measles/CodeSystem/VaccineProducts"
+      ]
+    }
+  ]
+}

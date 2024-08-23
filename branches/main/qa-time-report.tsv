@@ -1,0 +1,5 @@
+Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-who.fhir.smart-measles-catopia.json	7301	-	0	0	0	0	0	0	7	74	0	0	0	0	0	0	0	0	0	0	93	76	0	0	0	3	0	2
+fsh-generated/resources/StructureDefinition-CatMeaslesImmunization.json	1522	39	0	0	0	0	0	75	0	154	0	0	1	0	0	1	0	2	0	0	289	2225	0	0	0	12	0	3
+input/resources/CodeSystem-VaccineProducts.json	3619	36	0	0	0	0	0	0	1	69	0	0	0	0	0	0	0	0	0	0	21	13679	0	0	0	1	0	0
+input/resources/ValueSet-VSMeaslesVaccineProducts.json	1403	35	0	0	0	0	0	0	0	147	0	0	0	0	0	0	0	0	0	0	13	8202	0	0	0	1	0	0

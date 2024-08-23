@@ -1,0 +1,256 @@
+{
+  "date" : "Fri, 23 Aug, 2024 18:53:53 +0000",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [
+    {
+      "name" : "/fsh-generated/resources/ImplementationGuide-who.fhir.smart-measles-catopia.json",
+      "size" : 7301,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 53,
+          "length" : 18
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 53,
+          "length" : 7
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 53,
+          "length" : 223
+        },
+        {
+          "activity" : "validate",
+          "start" : 55,
+          "length" : 1702
+        },
+        {
+          "activity" : "generate1",
+          "start" : 57,
+          "length" : 124
+        },
+        {
+          "activity" : "generate2",
+          "start" : 59,
+          "length" : 85
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 104,
+          "length" : 3
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 111,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-CatMeaslesImmunization.json",
+      "size" : 1522,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 52,
+          "length" : 44
+        },
+        {
+          "activity" : "loadDepInfo",
+          "start" : 53,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 53,
+          "length" : 9
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 53,
+          "length" : 79
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 53,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 53,
+          "length" : 103
+        },
+        {
+          "activity" : "validate",
+          "start" : 54,
+          "length" : 1046
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 57,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 57,
+          "length" : 3
+        },
+        {
+          "activity" : "generate1",
+          "start" : 57,
+          "length" : 353
+        },
+        {
+          "activity" : "generate2",
+          "start" : 59,
+          "length" : 2072
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 104,
+          "length" : 12
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 111,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/CodeSystem-VaccineProducts.json",
+      "size" : 3097,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 52,
+          "length" : 46
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 53,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 53,
+          "length" : 11
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 53,
+          "length" : 37
+        },
+        {
+          "activity" : "validate",
+          "start" : 53,
+          "length" : 789
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 57,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 58,
+          "length" : 38
+        },
+        {
+          "activity" : "generate2",
+          "start" : 61,
+          "length" : 2581
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 104,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/Test-CodeSystem-Bundle.json",
+      "size" : 10168,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 52,
+          "length" : 80
+        },
+        {
+          "activity" : "load",
+          "start" : 53,
+          "length" : 12
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 53,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 53,
+          "length" : 208
+        },
+        {
+          "activity" : "validate",
+          "start" : 57,
+          "length" : 51
+        },
+        {
+          "activity" : "generate1",
+          "start" : 58,
+          "length" : 90
+        },
+        {
+          "activity" : "generate2",
+          "start" : 64,
+          "length" : 26
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/ValueSet-VSMeaslesVaccineProducts.json",
+      "size" : 1403,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 52,
+          "length" : 34
+        },
+        {
+          "activity" : "load",
+          "start" : 53,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 53,
+          "length" : 6
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 53,
+          "length" : 155
+        },
+        {
+          "activity" : "validate",
+          "start" : 54,
+          "length" : 22
+        },
+        {
+          "activity" : "generate1",
+          "start" : 58,
+          "length" : 26
+        },
+        {
+          "activity" : "generate2",
+          "start" : 64,
+          "length" : 7719
+        }
+      ]
+    }
+  ]
+}

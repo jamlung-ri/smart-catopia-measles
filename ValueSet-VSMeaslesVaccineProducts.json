@@ -1,0 +1,43 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "VSMeaslesVaccineProducts",
+  "meta" : {
+    "lastUpdated" : "2024-02-23T20:44:52.861018Z"
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet VSMeaslesVaccineProducts</b></p><a name=\"VSMeaslesVaccineProducts\"> </a><a name=\"hcVSMeaslesVaccineProducts\"> </a><a name=\"VSMeaslesVaccineProducts-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Last updated: 2024-02-23 20:44:52+0000</p></div><ul><li>Include all codes defined in <a href=\"CodeSystem-VaccineProducts.html\"><code>http://smart.who.int/immunizations-measles/CodeSystem/VaccineProducts</code></a></li></ul></div>"
+  },
+  "url" : "http://smart.who.int/immunizations-measles/ValueSet/VSMeaslesVaccineProducts",
+  "identifier" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/v2/0203",
+        "code" : "ACSN",
+        "display" : "Accession ID"
+      }],
+      "text" : "Accession ID"
+    },
+    "system" : "https://api.staging.openconceptlab.org",
+    "value" : "/orgs/WHO-Smart-Guidelines/ValueSet/VSMeaslesVaccineProducts/"
+  }],
+  "version" : "0.1.0",
+  "name" : "VSMeaslesVaccineProducts",
+  "title" : "MeaslesVaccine Products ValueSet - OCL",
+  "status" : "active",
+  "date" : "2024-02-23T20:44:52.851603Z",
+  "publisher" : "WHO",
+  "contact" : [{
+    "name" : "WHO",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://who.int"
+    }]
+  }],
+  "description" : "0.1.0",
+  "compose" : {
+    "include" : [{
+      "system" : "http://smart.who.int/immunizations-measles/CodeSystem/VaccineProducts"
+    }]
+  }
+}

@@ -1,0 +1,348 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "Test-CodeSystem-Bundle",
+  "meta" : {
+    "lastUpdated" : "2024-08-21T03:40:25.931164Z"
+  },
+  "type" : "searchset",
+  "total" : 1,
+  "link" : [{
+    "relation" : "self",
+    "url" : "https://fhir.staging.openconceptlab.org/orgs/WHO-SG-Example/CodeSystem/?purpose=Example&page=1"
+  }],
+  "entry" : [{
+    "resource" : {
+      "resourceType" : "CodeSystem",
+      "id" : "smart-example-immz",
+      "meta" : {
+        "lastUpdated" : "2024-08-22T19:40:01.594557Z"
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><a name=\"CodeSystem_smart-example-immz\"> </a><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem smart-example-immz</b></p><a name=\"smart-example-immz\"> </a><a name=\"hcsmart-example-immz\"> </a><a name=\"smart-example-immz-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Last updated: 2024-08-22 19:40:01+0000; Language: en</p></div><p><b>url</b>: <a href=\"Bundle-Test-CodeSystem-Bundle.html\">Example WHO Measles Digital Adaptation Kit Dictionary</a></p><p><b>identifier</b>: Accession ID//orgs/WHO-SG-Example/CodeSystem/smart-example-immz/</p><p><b>version</b>: 0.1.0</p><p><b>name</b>: WHO Measles DAK Dictionary Example</p><p><b>title</b>: Example WHO Measles Digital Adaptation Kit Dictionary</p><p><b>status</b>: Draft</p><p><b>description</b>: </p><div><p>First initial version of Example DAK</p>\n</div><p><b>purpose</b>: </p><div><p>Example</p>\n</div><p><b>content</b>: Complete</p><p><b>count</b>: 13</p><blockquote><p><b>property</b></p><p><b>code</b>: conceptclass</p><p><b>uri</b>: <a href=\"https://api.staging.openconceptlab.org/orgs/OCL/sources/Classes/concepts\">https://api.staging.openconceptlab.org/orgs/OCL/sources/Classes/concepts</a></p><p><b>description</b>: Standard list of concept classes.</p><p><b>type</b>: string</p></blockquote><blockquote><p><b>property</b></p><p><b>code</b>: datatype</p><p><b>uri</b>: <a href=\"https://api.staging.openconceptlab.org/orgs/OCL/sources/Datatypes/concepts\">https://api.staging.openconceptlab.org/orgs/OCL/sources/Datatypes/concepts</a></p><p><b>description</b>: Standard list of concept datatypes.</p><p><b>type</b>: string</p></blockquote><blockquote><p><b>property</b></p><p><b>code</b>: inactive</p><p><b>uri</b>: <a href=\"http://hl7.org/fhir/R4B/codesystem-concept-properties.html\">http://hl7.org/fhir/concept-properties</a></p><p><b>description</b>: True if the concept is not considered active.</p><p><b>type</b>: Coding (external reference)</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 10000387</p><p><b>display</b>: No ANC danger signs</p><p><b>definition</b>: No danger signs were observed by the health worker when checking for danger signs</p><h3>Designations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Language</b></td><td><b>Use</b></td><td><b>Value</b></td></tr><tr><td style=\"display: none\">*</td><td>English</td><td>[not stated] Fully Specified: Fully Specified</td><td>No ANC danger signs</td></tr></table><blockquote><p><b>property</b></p><p><b>code</b>: conceptclass</p><p><b>value</b>: Input Option</p></blockquote><blockquote><p><b>property</b></p><p><b>code</b>: datatype</p><p><b>value</b>: List value</p></blockquote></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 10000389</p><p><b>display</b>: Danger Signs</p><p><b>definition</b>: Indicates observations health worker made when checking for danger signs</p><blockquote><p><b>designation</b></p><p><b>language</b>: English</p><p><b>use</b>: [not stated] Fully Specified: Fully Specified</p><p><b>value</b>: Danger signs - edited</p></blockquote><blockquote><p><b>designation</b></p><p><b>language</b>: English</p><p><b>value</b>: Danger Signs</p></blockquote><blockquote><p><b>property</b></p><p><b>code</b>: conceptclass</p><p><b>value</b>: Input Option</p></blockquote><blockquote><p><b>property</b></p><p><b>code</b>: datatype</p><p><b>value</b>: List - select all that apply</p></blockquote></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 1234</p><p><b>display</b>: New Input Option</p><h3>Designations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Language</b></td><td><b>Use</b></td><td><b>Value</b></td></tr><tr><td style=\"display: none\">*</td><td>English</td><td>[not stated] Fully-Specified: Fully-Specified</td><td>New Input Option</td></tr></table><blockquote><p><b>property</b></p><p><b>code</b>: conceptclass</p><p><b>value</b>: Finding</p></blockquote><blockquote><p><b>property</b></p><p><b>code</b>: datatype</p><p><b>value</b>: None</p></blockquote></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 10000495</p><p><b>display</b>: Central cyanosis</p><p><b>definition</b>: Woman has a bluish discolouration of the skin</p><h3>Designations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Language</b></td><td><b>Use</b></td><td><b>Value</b></td></tr><tr><td style=\"display: none\">*</td><td>English</td><td>[not stated] Fully Specified: Fully Specified</td><td>Central cyanosis</td></tr></table><blockquote><p><b>property</b></p><p><b>code</b>: conceptclass</p><p><b>value</b>: Input Option</p></blockquote><blockquote><p><b>property</b></p><p><b>code</b>: datatype</p><p><b>value</b>: List value</p></blockquote></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 10000497</p><p><b>display</b>: ANC quick check danger signs observations</p><p><b>definition</b>: Health worker assesses woman to see whether there are any danger signs that warrant in-facility management or referral, or if possible, to proceed with the routine ANC contact</p><h3>Designations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Language</b></td><td><b>Use</b></td><td><b>Value</b></td></tr><tr><td style=\"display: none\">*</td><td>English</td><td>[not stated] Fully Specified: Fully Specified</td><td>ANC quick check danger signs observations</td></tr></table><blockquote><p><b>property</b></p><p><b>code</b>: conceptclass</p><p><b>value</b>: Data Element</p></blockquote><blockquote><p><b>property</b></p><p><b>code</b>: datatype</p><p><b>value</b>: List - select all that apply</p></blockquote></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 10000499</p><p><b>display</b>: Bleeding vaginally</p><p><b>definition</b>: Woman is bleeding vaginally</p><h3>Designations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Language</b></td><td><b>Use</b></td><td><b>Value</b></td></tr><tr><td style=\"display: none\">*</td><td>English</td><td>[not stated] Fully Specified: Fully Specified</td><td>Bleeding vaginally</td></tr></table><blockquote><p><b>property</b></p><p><b>code</b>: conceptclass</p><p><b>value</b>: Input Option</p></blockquote><blockquote><p><b>property</b></p><p><b>code</b>: datatype</p><p><b>value</b>: List value</p></blockquote></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 10000503</p><p><b>display</b>: Convulsing</p><p><b>definition</b>: Woman is convulsing</p><h3>Designations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Language</b></td><td><b>Use</b></td><td><b>Value</b></td></tr><tr><td style=\"display: none\">*</td><td>English</td><td>[not stated] Fully Specified: Fully Specified</td><td>Convulsing</td></tr></table><blockquote><p><b>property</b></p><p><b>code</b>: conceptclass</p><p><b>value</b>: Input Option</p></blockquote><blockquote><p><b>property</b></p><p><b>code</b>: datatype</p><p><b>value</b>: List value</p></blockquote></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 10000505</p><p><b>display</b>: Fever</p><p><b>definition</b>: Woman has a fever (body temperature greater than or equal to 37°C)</p><h3>Designations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Language</b></td><td><b>Use</b></td><td><b>Value</b></td></tr><tr><td style=\"display: none\">*</td><td>English</td><td>[not stated] Fully Specified: Fully Specified</td><td>Fever</td></tr></table><blockquote><p><b>property</b></p><p><b>code</b>: conceptclass</p><p><b>value</b>: Input Option</p></blockquote><blockquote><p><b>property</b></p><p><b>code</b>: datatype</p><p><b>value</b>: List value</p></blockquote></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 10000507</p><p><b>display</b>: Imminent delivery</p><p><b>definition</b>: Woman is about to give birth</p><h3>Designations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Language</b></td><td><b>Use</b></td><td><b>Value</b></td></tr><tr><td style=\"display: none\">*</td><td>English</td><td>[not stated] Fully Specified: Fully Specified</td><td>Imminent delivery</td></tr></table><blockquote><p><b>property</b></p><p><b>code</b>: conceptclass</p><p><b>value</b>: Input Option</p></blockquote><blockquote><p><b>property</b></p><p><b>code</b>: datatype</p><p><b>value</b>: List value</p></blockquote></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 10000509</p><p><b>display</b>: Labour</p><p><b>definition</b>: Woman is in labour</p><h3>Designations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Language</b></td><td><b>Use</b></td><td><b>Value</b></td></tr><tr><td style=\"display: none\">*</td><td>English</td><td>[not stated] Fully Specified: Fully Specified</td><td>Labour</td></tr></table><blockquote><p><b>property</b></p><p><b>code</b>: conceptclass</p><p><b>value</b>: Input Option</p></blockquote><blockquote><p><b>property</b></p><p><b>code</b>: datatype</p><p><b>value</b>: List value</p></blockquote></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 10000511</p><p><b>display</b>: ANC danger signs</p><p><b>definition</b>: Indicates observations health worker made when checking for danger signs</p><h3>Designations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Language</b></td><td><b>Use</b></td><td><b>Value</b></td></tr><tr><td style=\"display: none\">*</td><td>English</td><td>[not stated] Fully Specified: Fully Specified</td><td>ANC danger signs</td></tr></table><blockquote><p><b>property</b></p><p><b>code</b>: conceptclass</p><p><b>value</b>: Input Option</p></blockquote><blockquote><p><b>property</b></p><p><b>code</b>: datatype</p><p><b>value</b>: List - select all that apply</p></blockquote><blockquote><p><b>property</b></p><p><b>code</b>: inactive</p><p><b>value</b>: true</p></blockquote></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: ANC.B5.DE48</p><p><b>display</b>: ANC quick check danger signs observations</p><p><b>definition</b>: Health worker assesses woman to see whether there are any danger signs that warrant in-facility management or referral, or if possible, to proceed with the routine ANC contact</p><blockquote><p><b>designation</b></p><p><b>language</b>: English</p><p><b>use</b>: [not stated] Fully-Specified: Fully-Specified</p><p><b>value</b>: ANC quick check danger signs observations</p></blockquote><blockquote><p><b>designation</b></p><p><b>language</b>: English</p><p><b>use</b>: [not stated] None: None</p><p><b>value</b>: Example Synonym Value</p></blockquote><blockquote><p><b>property</b></p><p><b>code</b>: conceptclass</p><p><b>value</b>: Question</p></blockquote><blockquote><p><b>property</b></p><p><b>code</b>: datatype</p><p><b>value</b>: Coded</p></blockquote><blockquote><p><b>property</b></p><p><b>code</b>: inactive</p><p><b>value</b>: true</p></blockquote></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 10000501</p><p><b>display</b>: Central cyanosis</p><p><b>definition</b>: Woman has a bluish discolouration of the skin</p><h3>Designations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Language</b></td><td><b>Use</b></td><td><b>Value</b></td></tr><tr><td style=\"display: none\">*</td><td>English</td><td>[not stated] Fully Specified: Fully Specified</td><td>Central cyanosis</td></tr></table><blockquote><p><b>property</b></p><p><b>code</b>: conceptclass</p><p><b>value</b>: Input Option</p></blockquote><blockquote><p><b>property</b></p><p><b>code</b>: datatype</p><p><b>value</b>: List value</p></blockquote><blockquote><p><b>property</b></p><p><b>code</b>: inactive</p><p><b>value</b>: true</p></blockquote></blockquote></div>"
+      },
+      "url" : "http://smart.who.int/immunizations-measles/example-DAK",
+      "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/v2/0203",
+            "code" : "ACSN",
+            "display" : "Accession ID"
+          }],
+          "text" : "Accession ID"
+        },
+        "system" : "https://api.staging.openconceptlab.org",
+        "value" : "/orgs/WHO-SG-Example/CodeSystem/smart-example-immz/"
+      }],
+      "version" : "0.1.0",
+      "name" : "WHO Measles DAK Dictionary Example",
+      "title" : "Example WHO Measles Digital Adaptation Kit Dictionary",
+      "status" : "draft",
+      "description" : "First initial version of Example DAK",
+      "purpose" : "Example",
+      "content" : "complete",
+      "count" : 13,
+      "property" : [{
+        "code" : "conceptclass",
+        "uri" : "https://api.staging.openconceptlab.org/orgs/OCL/sources/Classes/concepts",
+        "description" : "Standard list of concept classes.",
+        "type" : "string"
+      },
+      {
+        "code" : "datatype",
+        "uri" : "https://api.staging.openconceptlab.org/orgs/OCL/sources/Datatypes/concepts",
+        "description" : "Standard list of concept datatypes.",
+        "type" : "string"
+      },
+      {
+        "code" : "inactive",
+        "uri" : "http://hl7.org/fhir/concept-properties",
+        "description" : "True if the concept is not considered active.",
+        "type" : "Coding"
+      }],
+      "concept" : [{
+        "code" : "10000387",
+        "display" : "No ANC danger signs",
+        "definition" : "No danger signs were observed by the health worker when checking for danger signs",
+        "designation" : [{
+          "language" : "en",
+          "use" : {
+            "code" : "Fully Specified"
+          },
+          "value" : "No ANC danger signs"
+        }],
+        "property" : [{
+          "code" : "conceptclass",
+          "valueString" : "Input Option"
+        },
+        {
+          "code" : "datatype",
+          "valueString" : "List value"
+        }]
+      },
+      {
+        "code" : "10000389",
+        "display" : "Danger Signs",
+        "definition" : "Indicates observations health worker made when checking for danger signs",
+        "designation" : [{
+          "language" : "en",
+          "use" : {
+            "code" : "Fully Specified"
+          },
+          "value" : "Danger signs - edited"
+        },
+        {
+          "language" : "en",
+          "value" : "Danger Signs"
+        }],
+        "property" : [{
+          "code" : "conceptclass",
+          "valueString" : "Input Option"
+        },
+        {
+          "code" : "datatype",
+          "valueString" : "List - select all that apply"
+        }]
+      },
+      {
+        "code" : "1234",
+        "display" : "New Input Option",
+        "designation" : [{
+          "language" : "en",
+          "use" : {
+            "code" : "Fully-Specified"
+          },
+          "value" : "New Input Option"
+        }],
+        "property" : [{
+          "code" : "conceptclass",
+          "valueString" : "Finding"
+        },
+        {
+          "code" : "datatype",
+          "valueString" : "None"
+        }]
+      },
+      {
+        "code" : "10000495",
+        "display" : "Central cyanosis",
+        "definition" : "Woman has a bluish discolouration of the skin",
+        "designation" : [{
+          "language" : "en",
+          "use" : {
+            "code" : "Fully Specified"
+          },
+          "value" : "Central cyanosis"
+        }],
+        "property" : [{
+          "code" : "conceptclass",
+          "valueString" : "Input Option"
+        },
+        {
+          "code" : "datatype",
+          "valueString" : "List value"
+        }]
+      },
+      {
+        "code" : "10000497",
+        "display" : "ANC quick check danger signs observations",
+        "definition" : "Health worker assesses woman to see whether there are any danger signs that warrant in-facility management or referral, or if possible, to proceed with the routine ANC contact",
+        "designation" : [{
+          "language" : "en",
+          "use" : {
+            "code" : "Fully Specified"
+          },
+          "value" : "ANC quick check danger signs observations"
+        }],
+        "property" : [{
+          "code" : "conceptclass",
+          "valueString" : "Data Element"
+        },
+        {
+          "code" : "datatype",
+          "valueString" : "List - select all that apply"
+        }]
+      },
+      {
+        "code" : "10000499",
+        "display" : "Bleeding vaginally",
+        "definition" : "Woman is bleeding vaginally",
+        "designation" : [{
+          "language" : "en",
+          "use" : {
+            "code" : "Fully Specified"
+          },
+          "value" : "Bleeding vaginally"
+        }],
+        "property" : [{
+          "code" : "conceptclass",
+          "valueString" : "Input Option"
+        },
+        {
+          "code" : "datatype",
+          "valueString" : "List value"
+        }]
+      },
+      {
+        "code" : "10000503",
+        "display" : "Convulsing",
+        "definition" : "Woman is convulsing",
+        "designation" : [{
+          "language" : "en",
+          "use" : {
+            "code" : "Fully Specified"
+          },
+          "value" : "Convulsing"
+        }],
+        "property" : [{
+          "code" : "conceptclass",
+          "valueString" : "Input Option"
+        },
+        {
+          "code" : "datatype",
+          "valueString" : "List value"
+        }]
+      },
+      {
+        "code" : "10000505",
+        "display" : "Fever",
+        "definition" : "Woman has a fever (body temperature greater than or equal to 37°C)",
+        "designation" : [{
+          "language" : "en",
+          "use" : {
+            "code" : "Fully Specified"
+          },
+          "value" : "Fever"
+        }],
+        "property" : [{
+          "code" : "conceptclass",
+          "valueString" : "Input Option"
+        },
+        {
+          "code" : "datatype",
+          "valueString" : "List value"
+        }]
+      },
+      {
+        "code" : "10000507",
+        "display" : "Imminent delivery",
+        "definition" : "Woman is about to give birth",
+        "designation" : [{
+          "language" : "en",
+          "use" : {
+            "code" : "Fully Specified"
+          },
+          "value" : "Imminent delivery"
+        }],
+        "property" : [{
+          "code" : "conceptclass",
+          "valueString" : "Input Option"
+        },
+        {
+          "code" : "datatype",
+          "valueString" : "List value"
+        }]
+      },
+      {
+        "code" : "10000509",
+        "display" : "Labour",
+        "definition" : "Woman is in labour",
+        "designation" : [{
+          "language" : "en",
+          "use" : {
+            "code" : "Fully Specified"
+          },
+          "value" : "Labour"
+        }],
+        "property" : [{
+          "code" : "conceptclass",
+          "valueString" : "Input Option"
+        },
+        {
+          "code" : "datatype",
+          "valueString" : "List value"
+        }]
+      },
+      {
+        "code" : "10000511",
+        "display" : "ANC danger signs",
+        "definition" : "Indicates observations health worker made when checking for danger signs",
+        "designation" : [{
+          "language" : "en",
+          "use" : {
+            "code" : "Fully Specified"
+          },
+          "value" : "ANC danger signs"
+        }],
+        "property" : [{
+          "code" : "conceptclass",
+          "valueString" : "Input Option"
+        },
+        {
+          "code" : "datatype",
+          "valueString" : "List - select all that apply"
+        },
+        {
+          "code" : "inactive",
+          "valueBoolean" : true
+        }]
+      },
+      {
+        "code" : "ANC.B5.DE48",
+        "display" : "ANC quick check danger signs observations",
+        "definition" : "Health worker assesses woman to see whether there are any danger signs that warrant in-facility management or referral, or if possible, to proceed with the routine ANC contact",
+        "designation" : [{
+          "language" : "en",
+          "use" : {
+            "code" : "Fully-Specified"
+          },
+          "value" : "ANC quick check danger signs observations"
+        },
+        {
+          "language" : "en",
+          "use" : {
+            "code" : "None"
+          },
+          "value" : "Example Synonym Value"
+        }],
+        "property" : [{
+          "code" : "conceptclass",
+          "valueString" : "Question"
+        },
+        {
+          "code" : "datatype",
+          "valueString" : "Coded"
+        },
+        {
+          "code" : "inactive",
+          "valueBoolean" : true
+        }]
+      },
+      {
+        "code" : "10000501",
+        "display" : "Central cyanosis",
+        "definition" : "Woman has a bluish discolouration of the skin",
+        "designation" : [{
+          "language" : "en",
+          "use" : {
+            "code" : "Fully Specified"
+          },
+          "value" : "Central cyanosis"
+        }],
+        "property" : [{
+          "code" : "conceptclass",
+          "valueString" : "Input Option"
+        },
+        {
+          "code" : "datatype",
+          "valueString" : "List value"
+        },
+        {
+          "code" : "inactive",
+          "valueBoolean" : true
+        }]
+      }]
+    }
+  }]
+}

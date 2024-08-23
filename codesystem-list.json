@@ -1,0 +1,12 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://smart.who.int/immunizations-measles/CodeSystem/VaccineProducts",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "VaccineProducts",
+      "title" : "Vaccine Product codes CodeSet",
+      "description" : "0.1.0"
+    }
+  ]
+}

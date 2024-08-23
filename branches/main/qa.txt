@@ -1,0 +1,50 @@
+SMART : Validation Results
+=========================================
+
+err = 13, warn = 12, info = 2
+IG Publisher Version: 1.6.2
+Generated Wed Mar 20 15:11:25 UTC 2024. FHIR version 4.3.0 for who.fhir.smart-measles-catopia#0.1.0 (canonical = http://worldhealthorganization.github.io/smart)
+ Build Errors : 7 / 5 / 0
+ /github/workspace/fsh-generated/resources/ImplementationGuide-who.fhir.smart-measles-catopia : 1 / 1 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-CatMeaslesImmunization : 1 / 1 / 2
+ /github/workspace/input/resources/CodeSystem-VaccineProducts : 7 / 2 / 1
+ /github/workspace/input/resources/ValueSet-VSMeaslesVaccineProducts : 3 / 3 / 1
+</table>
+== n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/CatMeaslesImmunization.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Immunization.status: The reference http://hl7.org/fhir/ValueSet/immunization-status|4.0.1 could not be resolved
+ERROR: /github/workspace/output/StructureDefinition-CatMeaslesImmunization-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/span/a at Line 408, column 405: The link 'immunization-status|4.0.1.html' for "immunization-status|4.0.1" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-CatMeaslesImmunization-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/span/a at Line 493, column 297: The link 'immunization-status|4.0.1.html' for "immunization-status|4.0.1" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-CatMeaslesImmunization.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 457, column 1864: The link 'immunization-status|4.0.1.html' for "immunization-status|4.0.1" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-CatMeaslesImmunization.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 518, column 1862: The link 'immunization-status|4.0.1.html' for "immunization-status|4.0.1" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-CatMeaslesImmunization.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 817, column 1864: The link 'immunization-status|4.0.1.html' for "immunization-status|4.0.1" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-CatMeaslesImmunization.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 878, column 1862: The link 'immunization-status|4.0.1.html' for "immunization-status|4.0.1" cannot be resolved
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/ImplementationGuide-who.fhir.smart-measles-catopia.json ==
+ERROR: ImplementationGuide/who.fhir.smart-measles-catopia: ImplementationGuide.meta.profile[0]: Canonical URLs must be absolute URLs if they are not fragment references (SMARTImplementationGuide)
+WARNING: ImplementationGuide/who.fhir.smart-measles-catopia: ImplementationGuide.meta.profile[0]: Profile reference 'SMARTImplementationGuide' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-CatMeaslesImmunization.json ==
+ERROR: StructureDefinition/CatMeaslesImmunization: StructureDefinition.snapshot.element[16].binding.valueSet: Canonical URL 'http://hl7.org/fhir/ValueSet/immunization-status|4.0.1' does not resolve
+INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+WARNING: StructureDefinition.where(url = 'http://worldhealthorganization.github.io/smart/StructureDefinition/CatMeaslesImmunization'): The Implementation Guide contains no examples for this profile
+== input/resources/CodeSystem-VaccineProducts.json ==
+ERROR: CodeSystem.concept[2].property[2].value[x]: Error parsing JSON: the primitive value must be a string
+ERROR: CodeSystem.where(url = 'http://smart.who.int/immunizations-measles/CodeSystem/VaccineProducts'): Conformance resource /github/workspace/input/resources/CodeSystem-VaccineProducts.json - the canonical URL (http://worldhealthorganization.github.io/smart/CodeSystem/VaccineProducts) does not match the URL (http://smart.who.int/immunizations-measles/CodeSystem/VaccineProducts)
+WARNING: CodeSystem/VaccineProducts: CodeSystem.identifier[0].type.coding[0].system: A definition for CodeSystem 'http://hl7.org/fhir/v2/0203' could not be found, so the code cannot be validated
+ERROR: CodeSystem/VaccineProducts: CodeSystem.identifier[0].type.coding[0].system: URL value 'http://hl7.org/fhir/v2/0203' does not resolve
+ERROR: CodeSystem/VaccineProducts: CodeSystem.count: The code system is complete, but the number of concepts (3) does not match the stated total number (2)
+ERROR: CodeSystem/VaccineProducts: CodeSystem.property[2]: Unknown CodeSystem Property 'http://hl7.org/fhir/concept-properties'. If you are creating your own property, do not create it in the HL7 namespace
+ERROR: CodeSystem/VaccineProducts: CodeSystem.concept[2].property[2]: The property 'inactive' has the invalid type 'string', when it is defined to have the type 'Coding'
+WARNING: Resource: This resource should have an OID assigned to cater for possible e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+ERROR: /github/workspace/input/resources/CodeSystem-VaccineProducts: URL Mismatch http://worldhealthorganization.github.io/smart/CodeSystem/VaccineProducts vs http://smart.who.int/immunizations-measles/CodeSystem/VaccineProducts
+== input/resources/ValueSet-VSMeaslesVaccineProducts.json ==
+ERROR: ValueSet.where(url = 'http://smart.who.int/immunizations-measles/ValueSet/VSMeaslesVaccineProducts'): Conformance resource /github/workspace/input/resources/ValueSet-VSMeaslesVaccineProducts.json - the canonical URL (http://worldhealthorganization.github.io/smart/ValueSet/VSMeaslesVaccineProducts) does not match the URL (http://smart.who.int/immunizations-measles/ValueSet/VSMeaslesVaccineProducts)
+WARNING: ValueSet/VSMeaslesVaccineProducts: ValueSet.identifier[0].type.coding[0]: A definition for CodeSystem 'http://hl7.org/fhir/v2/0203' could not be found, so the code cannot be validated
+ERROR: ValueSet/VSMeaslesVaccineProducts: ValueSet.identifier[0].type.coding[0].system: URL value 'http://hl7.org/fhir/v2/0203' does not resolve
+WARNING: ValueSet/VSMeaslesVaccineProducts: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: Resource: This resource should have an OID assigned to cater for possible e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+ERROR: /github/workspace/input/resources/ValueSet-VSMeaslesVaccineProducts: URL Mismatch http://worldhealthorganization.github.io/smart/ValueSet/VSMeaslesVaccineProducts vs http://smart.who.int/immunizations-measles/ValueSet/VSMeaslesVaccineProducts
